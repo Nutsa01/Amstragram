@@ -1,5 +1,7 @@
 # Amstragram
 
+<h3 align="center"><b>Français</b> · <a href="README.en.md">English</a></h3>
+
 Projet personnel pour apprendre React et Firebase. Application de photos avec connexion Google, j'aime, commentaires et recherche par mot-clé.
 
 **Site en ligne :** https://amstragram-01.web.app
