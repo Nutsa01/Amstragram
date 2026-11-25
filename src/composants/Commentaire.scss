@@ -1,0 +1,81 @@
+// Largeur de l'avatar + espace : sert à aligner les réponses sous le texte
+$retrait: calc(36px + 0.65rem);
+
+.Commentaire {
+  width: 100%;
+  padding: 0.6rem 1.1rem;
+  font-size: 0.92rem;
+  overflow-wrap: anywhere;
+
+  .CommentairePrincipal {
+    gap: 0.65rem;
+    align-items: flex-start;
+    .ant-avatar {
+      flex: 0 0 auto;
+    }
+  }
+
+  .corpsCommentaire {
+    flex: 1 1 0;
+    min-width: 0;
+  }
+
+  .auteur {
+    font-weight: 700;
+    margin-right: 0.2rem;
+  }
+
+  .commentaireTexte {
+    line-height: 1.45;
+  }
+
+  .commentaireInfos {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.1rem;
+    margin-top: 0.15rem;
+    font-size: 0.8rem;
+    color: var(--gris);
+
+    & > span:first-child {
+      margin-right: 0.35rem;
+    }
+
+    .ant-btn {
+      height: 28px;
+      padding: 0 0.5rem;
+      border-radius: 999px;
+      font-size: 0.8rem;
+      color: var(--gris);
+      &:hover {
+        background: var(--brume) !important;
+        color: var(--encre) !important;
+      }
+    }
+    .ant-btn.aimer.interactif:hover,
+    .ant-btn.aimer.actif {
+      color: var(--lac) !important;
+    }
+    .ant-btn.desaimer.interactif:hover,
+    .ant-btn.desaimer.actif {
+      color: var(--coquelicot) !important;
+    }
+  }
+
+  .basculeReponses {
+    align-self: flex-start;
+    height: auto;
+    margin-left: $retrait;
+    padding: 0.15rem 0.5rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--gris);
+  }
+
+  .aucuneReponse {
+    margin: 0.5rem 0 0 $retrait;
+    font-size: 0.85rem;
+    color: var(--gris);
+  }
+}

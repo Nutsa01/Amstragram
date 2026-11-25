@@ -1,0 +1,25 @@
+.InfosPublication {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  color: var(--encre);
+
+  .infoJaimes,
+  .infoCommentaires {
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+  }
+
+  .infoJaimes .anticon {
+    color: var(--coquelicot);
+    font-size: 1.15rem;
+  }
+
+  .infoCommentaires svg {
+    color: var(--gris);
+    font-size: 1rem;
+  }
+}

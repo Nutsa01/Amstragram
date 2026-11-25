@@ -1,0 +1,51 @@
+.FlechesPublication {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+  padding: 0.6rem 1rem;
+  border-bottom: 1px solid var(--trait);
+
+  .ant-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: var(--sapin);
+    font-size: 0.95rem;
+
+    &:hover:not(:disabled) {
+      color: var(--sapin) !important;
+      background: var(--brume) !important;
+    }
+    &:disabled {
+      color: var(--desactive);
+    }
+  }
+
+  .compteur {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 0.3rem;
+    min-width: 6.5rem;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .actuel {
+    font-size: 1.75rem;
+    font-weight: 800;
+    letter-spacing: -0.04em;
+    line-height: 1;
+    color: var(--sapin);
+    font-variation-settings: "opsz" 96;
+  }
+
+  .total {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--gris);
+  }
+}

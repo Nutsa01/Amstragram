@@ -1,0 +1,97 @@
+.Parametres {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  flex-grow: 1;
+  padding: 2.5rem 1.5rem 4rem;
+
+  .titrePage,
+  .carteProfil {
+    width: 100%;
+    max-width: 520px;
+  }
+
+  .carteProfil {
+    display: flex;
+    flex-direction: column;
+    gap: 1.35rem;
+    padding: 1.5rem;
+    border-radius: var(--rayon-carte);
+    background: var(--papier);
+    box-shadow: var(--ombre-carte);
+
+    &.vide {
+      align-items: flex-start;
+      color: var(--gris);
+    }
+  }
+
+  .infosProfil {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    .ant-avatar {
+      flex: 0 0 auto;
+    }
+  }
+
+  .identite {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+  }
+
+  .nom {
+    font-size: 1.15rem;
+    font-weight: 700;
+  }
+
+  .courriel {
+    color: var(--gris);
+    font-size: 0.9rem;
+    overflow-wrap: anywhere;
+  }
+
+  .champ {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+
+  .etiquette {
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+
+  .ant-picker {
+    width: 100%;
+    max-width: 16rem;
+  }
+
+  .ant-radio-group {
+    align-self: flex-start;
+  }
+
+  .boutonDeco {
+    align-self: flex-start;
+    margin-top: 0.25rem;
+  }
+
+  .boutonGoogle {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    height: auto;
+    padding: 0.6rem 1.1rem;
+    font-weight: 600;
+    svg {
+      flex: 0 0 auto;
+      font-size: 1.3rem;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    padding: 1.5rem 1rem;
+  }
+}

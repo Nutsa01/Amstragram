@@ -1,0 +1,52 @@
+.BarreRecherche {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  width: 100%;
+  max-width: 620px;
+  margin-bottom: 1.75rem;
+
+  .sousTitre {
+    margin-top: -0.35rem;
+    color: var(--gris);
+  }
+
+  .champRecherche {
+    width: 100%;
+  }
+
+  .ant-input-affix-wrapper {
+    border-radius: 999px;
+    padding: 0.55rem 1.1rem;
+    .ant-input-prefix {
+      margin-inline-end: 0.6rem;
+      color: var(--gris);
+    }
+  }
+
+  .motsClesPopulaires {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.4rem;
+  }
+
+  .voirTout {
+    padding: 0.3rem 0.4rem;
+    border: none;
+    background: none;
+    color: var(--lac);
+    font: inherit;
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  @media screen and (max-width: 640px) {
+    padding: 1.5rem 1rem 0;
+    margin-bottom: 1.25rem;
+  }
+}

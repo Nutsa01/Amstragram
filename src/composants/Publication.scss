@@ -1,0 +1,23 @@
+.Publication {
+  width: 100%;
+  max-width: 620px;
+  background: var(--papier);
+  border-radius: var(--rayon-carte);
+  overflow: hidden;
+  box-shadow: var(--ombre-carte);
+
+  .Publication-reactions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+    padding: 0.55rem 0.75rem 0.55rem 1.1rem;
+    border-bottom: 1px solid var(--trait);
+  }
+
+  @media screen and (max-width: 640px) {
+    max-width: none;
+    border-radius: 0;
+    box-shadow: none;
+  }
+}

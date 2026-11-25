@@ -1,0 +1,63 @@
+.CommentaireReponse {
+  gap: 0.6rem;
+  align-items: flex-start;
+  margin: 0.55rem 0 0 calc(36px + 0.65rem);
+  padding-left: 0.75rem;
+  border-left: 2px solid var(--trait);
+  font-size: 0.88rem;
+
+  .ant-avatar {
+    flex: 0 0 auto;
+  }
+
+  .corpsCommentaire {
+    flex: 1 1 0;
+    min-width: 0;
+  }
+
+  .auteur {
+    font-weight: 700;
+    margin-right: 0.2rem;
+  }
+
+  .commentaireTexte {
+    line-height: 1.45;
+  }
+
+  .commentaireInfos {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.1rem;
+    margin-top: 0.15rem;
+    font-size: 0.78rem;
+    color: var(--gris);
+
+    & > span:first-child {
+      margin-right: 0.35rem;
+    }
+
+    .ant-btn {
+      height: 26px;
+      padding: 0 0.45rem;
+      border-radius: 999px;
+      font-size: 0.78rem;
+      color: var(--gris);
+      &:hover:not(:disabled) {
+        background: var(--brume) !important;
+        color: var(--encre) !important;
+      }
+      &:disabled {
+        color: var(--desactive);
+      }
+    }
+    .ant-btn.aimer.interactif:hover,
+    .ant-btn.aimer.interactif.actif {
+      color: var(--lac) !important;
+    }
+    .ant-btn.desaimer.interactif:hover,
+    .ant-btn.desaimer.interactif.actif {
+      color: var(--coquelicot) !important;
+    }
+  }
+}

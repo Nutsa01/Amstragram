@@ -1,0 +1,13 @@
+.Appli {
+  font-family: var(--police);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow-x: hidden;
+  background: var(--brume);
+  @media screen and (min-width: 769px) {
+    flex-direction: row;
+    overflow-x: visible;
+  }
+}

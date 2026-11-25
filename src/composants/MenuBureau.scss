@@ -1,0 +1,133 @@
+.MenuBureau {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  flex: 0 0 auto;
+  background: var(--sapin);
+
+  .ant-layout-sider {
+    height: 100%;
+  }
+
+  .MenuBureau-contenu {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    height: 100%;
+    padding: 1.25rem 0.85rem;
+  }
+
+  .entete {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 44px;
+    padding-left: 0.45rem;
+  }
+
+  .marque {
+    font-size: 1.65rem;
+    font-weight: 800;
+    letter-spacing: -0.04em;
+    color: var(--brume);
+    font-variation-settings: "opsz" 96;
+  }
+
+  .ant-layout-sider-collapsed .entete {
+    justify-content: center;
+    padding-left: 0;
+  }
+
+  .boutonReduire,
+  .boutonDeconnexion {
+    color: rgba(237, 240, 234, 0.7);
+    &:hover {
+      color: #fff !important;
+      background: var(--sapin-2) !important;
+    }
+  }
+
+  .profil {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem;
+    border-radius: 14px;
+    background: var(--sapin-2);
+
+    .ant-avatar {
+      flex: 0 0 auto;
+    }
+    .profilTexte {
+      display: flex;
+      flex-direction: column;
+      min-width: 0;
+    }
+    .nom {
+      color: #fff;
+      font-weight: 700;
+      line-height: 1.25;
+    }
+    .bio {
+      color: var(--lichen);
+      font-size: 0.85rem;
+      line-height: 1.35;
+      overflow-wrap: anywhere;
+    }
+  }
+
+  .profilReduit {
+    display: flex;
+    justify-content: center;
+  }
+
+  .boutonGoogle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+    width: 100%;
+    height: auto;
+    padding: 0.7rem 0.9rem;
+    border: none;
+    border-radius: 12px;
+    background: #fff;
+    color: var(--encre);
+    font-weight: 600;
+    svg {
+      flex: 0 0 auto;
+      font-size: 1.35rem;
+    }
+    &:hover {
+      color: var(--encre) !important;
+      background: var(--mousse) !important;
+    }
+    &.reduit {
+      align-self: center;
+      width: 48px;
+      height: 48px;
+      padding: 0;
+      border-radius: 50%;
+    }
+  }
+
+  .ant-menu {
+    flex: 1 1 auto;
+    background: transparent;
+    border-inline-end: none !important;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+
+  .boutonDeconnexion {
+    justify-content: flex-start;
+    height: 44px;
+    padding: 0 1rem;
+    font-weight: 500;
+  }
+
+  .ant-layout-sider-collapsed .boutonDeconnexion {
+    justify-content: center;
+    padding: 0;
+  }
+}

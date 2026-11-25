@@ -1,0 +1,9 @@
+.Contenu {
+  flex-grow: 1;
+  display: flex;
+  min-width: 0;
+  @media screen and (max-width: 768px) {
+    // Laisse la place à la barre d'onglets fixe en bas
+    padding-bottom: 72px;
+  }
+}

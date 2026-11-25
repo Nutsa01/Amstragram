@@ -1,0 +1,25 @@
+.ActionsPublication {
+  display: flex;
+  gap: 0.25rem;
+
+  .ant-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+    height: 38px;
+    padding: 0 0.85rem;
+    border-radius: 999px;
+    color: var(--gris);
+    font-weight: 600;
+
+    &:hover {
+      color: var(--encre) !important;
+      background: var(--brume) !important;
+    }
+    &.actif:first-of-type:hover,
+    &.dejaLike,
+    &.dejaLike:hover {
+      color: var(--coquelicot) !important;
+    }
+  }
+}
